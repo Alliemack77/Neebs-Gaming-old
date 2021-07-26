@@ -1,0 +1,6 @@
+// use forward here in index.scss
+@forward './colors';
+@forward './variables';
+
+// then use the below code whereever you need stuff from the _abstracts folder:
+// @use '../abstracts';
