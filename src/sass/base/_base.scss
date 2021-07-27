@@ -1,0 +1,14 @@
+// each component should contain the following
+@use '../abstracts' as *;
+// @import '../base/reset.scss';
+
+
+body {
+    background: $clr-bg-primary;
+    color: $clr-primary;
+}
+
+
+
+
+

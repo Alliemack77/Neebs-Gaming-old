@@ -1,0 +1,172 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+header {
+    padding: 1em;
+}
+
+button {
+    border: none;
+}
+
+.nav-container {
+   // border: solid 2px purple;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    z-index: 100;
+
+    & .logo {
+        max-width: 100px;
+    }
+
+
+}
+
+.nav {
+    //border: solid red 2px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(110%);
+    transition: transform 250ms ;
+    z-index: 100;
+    //padding: 2em 0 0 0;
+    background-color: $clr-bg-primary;
+
+    & .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2em;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: $links;
+    }
+
+    & .nav-link {
+        text-transform: uppercase;
+        color: $clr-primary;
+    }
+
+    & .nav-link:hover, 
+    & .nav-link:focus {
+        color: $clr-accent;
+        text-decoration: underline;
+    }
+
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    margin: 1rem;
+    padding: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+    background: black;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(0.625turn);
+
+    &::before {
+      /* These two --::before and ::after -- transform the hamburger into an X */
+      transform: rotate(90deg) translateX(-16px);
+    }
+    &::after {
+      opacity: 0;
+    }
+
+}
+
+
+.hamburger {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: .25rem;
+    background: $clr-accent;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+
+    &::before, 
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 2rem;
+        height: .25rem;
+        background: $clr-accent;
+        border-radius: 1em;
+        transition: transform 250ms ease-in-out;
+    }
+
+    &::before {
+        top: 1rem;
+    }
+
+    &::after {
+        bottom: 1rem;
+    }
+}
+
+
+.banner {
+    text-align: center;
+    margin-block-start: 2em;
+}
+
+
+// Media Queries
+@media (min-width: 750px) {
+  
+    .nav-toggle {
+        display: none;
+    }
+  
+    .nav {
+        //margin: 2em 1em;
+        left: auto;
+        bottom: auto;
+        transform: none;
+
+        & .nav-list {
+            flex-direction: row;
+            justify-content: start;
+        }
+        
+    }
+
+    .banner {
+        text-align: end;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+

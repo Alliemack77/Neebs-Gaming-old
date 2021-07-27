@@ -1,13 +1,3 @@
-// each component should contain the following:
-
-// @use './abstracts' as *;
-// @use './base' as *;
-
-// body {
-//     background-color: $clr-bg-primary;
-//     font-family: $font-primary;
-//     color: $clr-accent;
-// }
-
-
 // bring only components into this file
+@import '../sass/components/navbar';
+@import '../sass/components/hero';
