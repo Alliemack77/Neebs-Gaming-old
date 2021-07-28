@@ -3,6 +3,7 @@
 
 header {
     padding: 1em;
+    //border: solid red 2px;
 }
 
 button {
@@ -10,7 +11,7 @@ button {
 }
 
 .nav-container {
-   // border: solid 2px purple;
+    //border: solid 2px purple;
     position: relative;
     top: 0;
     right: 0;
@@ -18,15 +19,17 @@ button {
     width: 100%;
     height: 100px;
     display: flex;
-    //justify-content: space-between;
-    //align-items: center;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
 
     & .logo {
         max-width: 100px;
     }
+}
 
-
+nav {
+    display: flex;
 }
 
 .nav {
@@ -36,7 +39,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateX(110%);
+    transform: translateX(115%);
     transition: transform 250ms ;
     z-index: 100;
     //padding: 2em 0 0 0;
@@ -99,7 +102,6 @@ button {
 
 }
 
-
 .hamburger {
     display: block;
     position: relative;
@@ -131,7 +133,6 @@ button {
     }
 }
 
-
 .banner {
     text-align: center;
     margin-block-start: 2em;
@@ -139,16 +140,17 @@ button {
 
 
 // Media Queries
-@media (min-width: 750px) {
-  
+@media (min-width: 768px) {
+
     .nav-toggle {
         display: none;
     }
   
     .nav {
-        //margin: 2em 1em;
-        left: auto;
-        bottom: auto;
+        // margin: 4em 1em;
+        // left: auto;
+        // bottom: auto;
+        position: relative;
         transform: none;
 
         & .nav-list {
@@ -161,6 +163,14 @@ button {
     .banner {
         text-align: end;
         margin: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }
 

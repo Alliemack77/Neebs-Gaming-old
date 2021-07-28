@@ -18,7 +18,6 @@ export default function Nav () {
                 
 
                 <nav>
-                    
                     <button className="nav-toggle" aria-label="toggle-naviation" onClick={() => setIsToggled(!isToggled)}>
                         <span className="hamburger"></span>
                     </button>
@@ -50,7 +49,7 @@ export default function Nav () {
             </section>
 
             <section className="banner">
-                <p className="banner-cta">streaming on <a className="bold" href="https://www.twitch.tv/neebsgaming">Twitch Thursdays</a> @ <a className="bold" href="https://www.twitch.tv/neebsgaming">8pm</a> EST</p>
+                <p className="banner-cta">streaming on <a className="bold" href="https://www.twitch.tv/neebsgaming" target="_blank" rel="noreferrer" >Twitch Thursdays</a> @ <a className="bold" href="https://www.twitch.tv/neebsgaming">8pm</a> EST</p>
             </section>
 
         </header>

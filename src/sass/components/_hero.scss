@@ -3,7 +3,7 @@
 
 .hero,
 .hero-cta  {
-    border: solid red 2px;
+    //border: solid red 2px;
     padding: 4em 2em;
     display: flex;
     flex-direction: column;
@@ -17,31 +17,59 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 }
 
 .hero {
     height: 75vh;
 
+    & > * + * {
+        margin-top: 2.5em;
+    }
+    
     .subtitle {
         margin-top: 1em;
     }
 
     .body {
-        text-align: center;
-    }
-    
+        //text-align: center;
+        max-width: 550px;
+    } 
 }
 
+.hero-cta {
+    //background: #d4d3d3;
+    background-image: linear-gradient(#242424d0, #242424d0), url('../../assets/logo.png');
+    background-position: center;
+
+    & .cta {
+        //border: solid red 2px;
+        padding: 2.5em 4em;
+        background: black;
+
+        & a:hover, 
+        & a:focus {
+            text-decoration: underline;
+            color: $clr-accent
+        }
+
+        & > * + * {
+            margin-top: 2.75rem;
+            
+        }
+    }
+}
 
 .social {
     display: flex;
     align-items: center;
     gap: 1.5em;
+    //margin: 2rem 0 0 0;
 
     & .social-link {
         color: $clr-primary;
-        font-size: $social-links;
+        font-size: $social-link;
     }
 
 }

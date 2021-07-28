@@ -13,10 +13,11 @@ $fw-bold: 700;
 
 // Font Sizes
 $links: 1.15rem;
-$social-links: 3rem;
-// $subtitle: 
+$social-link: clamp(2.5rem, 3.843vw, 3.5rem);
+$heading: clamp(3rem, 5.797vw, 7rem);
 $p: 1rem;
-$h1: 5.25rem;
+$h1: clamp(5.25rem, 8.405vw, 9rem);
+$h1-accent: clamp(10rem, 15.913vw, 17rem);
 
 
 
@@ -38,16 +39,17 @@ body {
 .banner-cta {
     color: $clr-accent;
     font-weight: $fw-thin;
-}
 
-.bold {
-    font-weight: $fw-bold;
-    color: $clr-accent;
-
-    &:visited {
+    & .bold {
+        font-weight: $fw-bold;
         color: $clr-accent;
+    
+        &:visited {
+            color: $clr-accent;
+        }
     }
 }
+
 
 // Hero Title and Subtitle
 .title {
@@ -57,17 +59,30 @@ body {
     text-transform: uppercase;
     font-size: $h1;
 
-
     & .accent {
-        font-size: 10rem;
+        font-size: $h1-accent;
     }
 }
 
 .subtitle {
     font-size: 1.15rem;
-    text-align: center;
-
 }
+
+
+// Hero-cta
+.heading {
+    max-width: min-content;
+    font-size: $heading;
+    letter-spacing: .01rem;
+    line-height: 1;
+    color: $clr-accent;
+    //font-weight: $fw-bold;
+
+    @media (min-width: 1000px) {
+        max-width: none;
+    }
+}
+
 
 
 
