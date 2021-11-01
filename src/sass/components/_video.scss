@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+// .video {
+//     //border: solid red 2px;
+//     padding-top: 2em;
+//     padding-bottom: 10em;
+//     background: $clr-bg-primary;
+    
+// }
+
+// .video-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     & > * + * {
+//         margin-top: 2.5rem ;
+//     }
+// }
+
+.iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    // @media (min-width: 500px) {
+    //     width: 50%;
+    // }
+}
+
+.player-wrapper {
+    //border: solid red 2px;
+    display: flex;
+    justify-content: center;
+    //padding: 0 1em;
+    max-width: 1600px;
+}
+
+#twitch-player-ih1uk{
+    border: solid 2px green;
+    
+    
+
+}
+

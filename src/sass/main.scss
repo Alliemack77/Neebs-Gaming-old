@@ -1,3 +1,6 @@
-// bring only components into this file
+// bring only components and layout into this file
 @import '../sass/components/navbar';
 @import '../sass/components/hero';
+@import '../sass/components/video';
+@import '../sass/components/twitch-banner';
+@import '../sass/layouts/index';

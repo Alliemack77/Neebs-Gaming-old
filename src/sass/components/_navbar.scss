@@ -1,10 +1,6 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-header {
-    padding: 1em;
-    //border: solid red 2px;
-}
 
 button {
     border: none;
@@ -24,7 +20,7 @@ button {
     z-index: 100;
 
     & .logo {
-        max-width: 100px;
+        max-width: 4.68em;
     }
 }
 
@@ -133,13 +129,7 @@ nav {
     }
 }
 
-.banner {
-    text-align: center;
-    margin-block-start: 2em;
-}
 
-
-// Media Queries
 @media (min-width: 768px) {
 
     .nav-toggle {
@@ -160,19 +150,8 @@ nav {
         
     }
 
-    .banner {
-        text-align: end;
-        margin: 0;
-    }
 }
 
-@media (min-width: 1000px) {
-
-    header {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-}
 
 
 

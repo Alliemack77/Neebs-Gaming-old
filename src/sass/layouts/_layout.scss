@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.layout {
+    border: solid 2px green;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1400px;
+
+    @media (min-width: 768px) {
+        padding: 0 2em;
+
+    }
+}

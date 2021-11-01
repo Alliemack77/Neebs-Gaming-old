@@ -48,9 +48,7 @@ export default function Nav () {
                 </nav>
             </section>
 
-            <section className="banner">
-                <p className="banner-cta">streaming on <a className="bold" href="https://www.twitch.tv/neebsgaming" target="_blank" rel="noreferrer" >Twitch Thursdays</a> @ <a className="bold" href="https://www.twitch.tv/neebsgaming">8pm</a> EST</p>
-            </section>
+           
 
         </header>
 
@@ -58,5 +56,5 @@ export default function Nav () {
 
 
 
-    );
+    ); 
 }

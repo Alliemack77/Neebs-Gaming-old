@@ -14,15 +14,14 @@ $fw-bold: 700;
 // Font Sizes
 $links: 1.15rem;
 $social-link: clamp(2.5rem, 3.843vw, 3.5rem);
-$heading: clamp(3rem, 5.797vw, 7rem);
+$heading: clamp(2rem, 4.148vw, 4.2rem); 
 $p: 1rem;
 $h1: clamp(5.25rem, 8.405vw, 9rem);
 $h1-accent: clamp(10rem, 15.913vw, 17rem);
 
 
 
-
-// General 
+// General Styling
 body {
     font-family: $font-primary;
     line-height: 1.6;
@@ -51,9 +50,9 @@ body {
 }
 
 
-// Hero Title and Subtitle
+// Hero Title 
 .title {
-    width: min-content;
+    //width: min-content;
     font-weight: $fw-thin;
     line-height: .75;
     text-transform: uppercase;
@@ -64,23 +63,21 @@ body {
     }
 }
 
+
+// Hero subtitle, cta subtitle, video subtitle
 .subtitle {
     font-size: 1.15rem;
+    text-align: center;
 }
 
 
-// Hero-cta
+// Hero-cta, section headings
 .heading {
-    max-width: min-content;
     font-size: $heading;
     letter-spacing: .01rem;
     line-height: 1;
     color: $clr-accent;
-    //font-weight: $fw-bold;
-
-    @media (min-width: 1000px) {
-        max-width: none;
-    }
+    font-weight: $fw-bold;
 }
 
 
